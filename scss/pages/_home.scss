@@ -1,0 +1,90 @@
+main section h2 {
+    font-size: 25px;
+    background-clip: text;
+    background-color: $colorTitulos;
+    color: $colorPrimario;
+    margin-top: 30px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.titleGenerales {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.parrafos {
+    border: 5px;
+    border-style: solid;
+    border-color: $colorBordes;
+    padding: 15px;
+    margin: 25px;
+}
+
+.conteiner {
+    @include flex (row);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+
+    .tarjeta {
+        color: $colorPrimario;
+        background-color: $colorTarjeta;
+    }
+
+}
+
+#grid {
+    color: $colorPrimario;
+    display: grid;
+    grid-template-areas:
+        "section3 section3"
+        "section3 section3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: space-evenly;
+    margin-left: 50px;
+
+    .itemVideo {
+        @include flex (column);
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.datos {
+    @include flex (column);
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+    .imgVentas {
+        margin: 20px;
+    }
+}
+
+.titulos {
+    margin-left: 20px;
+}
+
+
+.tabla {
+    @include flex (row);
+    justify-content: space-evenly;
+
+    .imgTabla {
+        width: 350px;
+    }
+}
+

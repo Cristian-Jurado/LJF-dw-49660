@@ -1,0 +1,140 @@
+/* RESOLUCIÓN MENOR A 780px */
+@media screen and (max-width: 780px) {
+
+    .conteiner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    #grid {
+        grid-template-areas:
+            "section3 section3"
+            "section3 section3";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-content: space-evenly;
+        margin-left: 0px;
+    }
+
+    footer {
+
+        color: $colorFotter1;
+        background-color: $colorTarjeta;
+        padding: 30px;
+    }
+
+    .tarjeta {
+        @include flex (row);
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+
+}
+
+/* RESOLUCIÓN MENOR A 320px */
+@media screen and (max-width: 320px) {
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    header>div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    .imgBotita {
+        margin: 15px;
+    }
+
+    .imgContainer {
+        justify-content: center;
+        width: 270px;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        margin-left: 24px;
+
+    }
+
+    .conteiner {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    #grid {
+        grid-template-areas:
+            "section3"
+            "section3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-content: space-evenly;
+        margin-left: 0px;
+    }
+
+
+    .col-item {
+        width: 25%;
+        text-align: center;
+        @include flex (column);
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 20px;
+    }
+
+    .titulos {
+        @include flex (column);
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    main section div h2 {
+        margin: 10px;
+    }
+
+    .titleGenerales {
+        margin: 0px;
+    }
+
+    footer {
+        color: $colorSecundario;
+        background-color: $colorPrimario;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        @include flex (column);
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+    }
+
+}

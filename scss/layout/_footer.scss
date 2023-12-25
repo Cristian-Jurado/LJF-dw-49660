@@ -1,0 +1,21 @@
+footer {
+    color: $colorFotter1;
+    background-color: $colorFotter2;
+    display: flex;
+    padding: 30px;
+
+    .col-item {
+        width: 25%;
+        text-align: center;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+}

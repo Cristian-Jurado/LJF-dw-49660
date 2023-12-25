@@ -1,0 +1,21 @@
+header nav {
+    list-style-type: none;
+    display: flex;
+
+    padding: 0;
+
+    ul {
+        display: flex;
+        color: $colorPrimario;
+
+        li {
+
+            margin: 30px;
+
+            a {
+                color: $colorSecundario;
+                text-decoration: none;
+            }
+        }
+    }
+}

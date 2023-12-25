@@ -1,0 +1,22 @@
+// NESTING - VARIABLES - PARTIALS
+
+//ABSTRACTS
+@import "abstracts/vars";
+@import "abstracts/mixin";
+
+//BASE
+@import "base/reset";
+
+//LAYOUT
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/footer";
+
+//PAGES
+@import "pages/home";
+
+// MEDIAQUERIES
+@import "mediaqueries/mediaqueries"
+
+
+
