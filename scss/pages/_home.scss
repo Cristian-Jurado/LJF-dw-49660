@@ -35,6 +35,12 @@ main section h2 {
     .tarjeta {
         color: $colorPrimario;
         background-color: $colorTarjeta;
+
+        .imgNoticias {
+            width: 300px;
+
+        }
+
     }
 
 }
@@ -56,10 +62,13 @@ main section h2 {
         gap: 15px;
         align-items: center;
         margin-bottom: 20px;
+      
+        .videoNoticias {
+            width: 300px;
+            height: 315px;
+        }
     }
 }
-
-
 
 .datos {
     @include flex (column);
@@ -69,9 +78,6 @@ main section h2 {
     align-items: center;
     margin: 15px;
 
-    .imgVentas {
-        margin: 20px;
-    }
 }
 
 .titulos {
@@ -82,9 +88,34 @@ main section h2 {
 .tabla {
     @include flex (row);
     justify-content: space-evenly;
+    margin-bottom: 20px;
 
     .imgTabla {
         width: 350px;
     }
 }
 
+.grid-camisetas {
+    display: grid;
+    grid-template-areas: 
+    "article1 article1"
+    "article1 article1";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: space-evenly;
+    justify-items: center;
+
+    .imgVentas {
+        margin: 20px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+        .tamaño{
+            width: 190px;
+        }
+
+    }
+}

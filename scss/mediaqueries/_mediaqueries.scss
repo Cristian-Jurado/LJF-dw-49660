@@ -1,12 +1,12 @@
-/* RESOLUCIÓN MENOR A 780px */
-@media screen and (max-width: 780px) {
+/* RESOLUCIÓN MENOR A 1024px */
+@media screen and (max-width: 1024px) {
 
     .conteiner {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        margin-left: 0px;
+        margin-left: 82px;
     }
 
     #grid {
@@ -37,8 +37,8 @@
 
 }
 
-/* RESOLUCIÓN MENOR A 320px */
-@media screen and (max-width: 320px) {
+/* RESOLUCIÓN MENOR A 768px */
+@media screen and (max-width: 768px) {
     header {
         flex-wrap: wrap;
         flex-direction: column;
@@ -67,11 +67,10 @@
 
     .imgContainer {
         justify-content: center;
-        width: 270px;
         flex-direction: column;
         margin: 0px;
         padding: 0px;
-        margin-left: 24px;
+        align-items: center;
 
     }
 

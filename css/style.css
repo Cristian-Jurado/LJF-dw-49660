@@ -65,6 +65,9 @@ footer .col-item ul {
 footer .col-item ul li {
   list-style-type: none;
 }
+footer .col-item ul li .redes {
+  width: 50px;
+}
 
 main section h2 {
   font-size: 25px;
@@ -105,6 +108,9 @@ main section h2 {
   color: black;
   background-color: bisque;
 }
+.conteiner .tarjeta .imgNoticias {
+  width: 300px;
+}
 
 #grid {
   color: black;
@@ -123,6 +129,10 @@ main section h2 {
   align-items: center;
   margin-bottom: 20px;
 }
+#grid .itemVideo .videoNoticias {
+  width: 300px;
+  height: 315px;
+}
 
 .datos {
   display: flex;
@@ -133,9 +143,6 @@ main section h2 {
   align-items: center;
   margin: 15px;
 }
-.datos .imgVentas {
-  margin: 20px;
-}
 
 .titulos {
   margin-left: 20px;
@@ -145,19 +152,40 @@ main section h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 .tabla .imgTabla {
   width: 350px;
 }
 
-/* RESOLUCIÓN MENOR A 780px */
-@media screen and (max-width: 780px) {
+.grid-camisetas {
+  display: grid;
+  grid-template-areas: "article1 article1" "article1 article1";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: space-evenly;
+  justify-items: center;
+}
+.grid-camisetas .imgVentas {
+  margin: 20px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid-camisetas .imgVentas .tamaño {
+  width: 190px;
+}
+
+/* RESOLUCIÓN MENOR A 1024px */
+@media screen and (max-width: 1024px) {
   .conteiner {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 0px;
+    margin-left: 82px;
   }
   #grid {
     grid-template-areas: "section3 section3" "section3 section3";
@@ -181,8 +209,8 @@ main section h2 {
     margin: 20px;
   }
 }
-/* RESOLUCIÓN MENOR A 320px */
-@media screen and (max-width: 320px) {
+/* RESOLUCIÓN MENOR A 768px */
+@media screen and (max-width: 768px) {
   header {
     flex-wrap: wrap;
     flex-direction: column;
@@ -206,11 +234,10 @@ main section h2 {
   }
   .imgContainer {
     justify-content: center;
-    width: 270px;
     flex-direction: column;
     margin: 0px;
     padding: 0px;
-    margin-left: 24px;
+    align-items: center;
   }
   .conteiner {
     flex-direction: column;
