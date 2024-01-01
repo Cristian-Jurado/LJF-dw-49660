@@ -5,7 +5,7 @@ header {
     color: $colorSecundario;
 
     div {
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 130px;
         display: flex;
         align-items: center;
@@ -17,6 +17,18 @@ header {
         h1 {
             color: $colorSecundario;
             width: 40px;
+            animation: desaparecer 2s infinite;
+
+            @keyframes desaparecer {
+                to {
+                    opacity: 1;
+                }
+
+                from {
+                    opacity: 0;
+                }
+            }
         }
     }
+
 }
