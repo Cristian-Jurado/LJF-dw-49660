@@ -39,7 +39,7 @@ main section h2 {
 .conteiner {
     @include flex (row);
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 15px;
 
@@ -110,35 +110,12 @@ main section h2 {
 
 .tabla {
     @include flex (row);
-    justify-content: space-evenly;
-    padding: 50px;
+    justify-content:center;
+    width: 400px;
+    height: 500px;
 
-    .imgTabla {
-        width: 350px;
-    }
 }
-
-.grid-camisetas {
-    display: grid;
-    grid-template-areas:
-        "article1 article1"
-        "article1 article1";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-content: space-evenly;
-    justify-items: center;
-
-    .imgVentas {
-        margin: 20px;
-        width: 250px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .tamaño {
-            width: 190px;
-        }
-
+.imgVentas {
+    width: 300px;
+    height: 400px;
     }
-}
